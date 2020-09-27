@@ -60,13 +60,19 @@ void print()
 int main()
 {
     int N;
+
+    printf("How many data you want to Input : ");
     scanf("%d",&N);
+    printf("Insert %d Data : \n",N);
     while(N--)
     {
         int n;
         scanf("%d",&n);
         insert(n);
     }
+    printf("Before Sort : ");
+    print();
     bubleSort();
+    printf("\nAfter Sort : ");
     print();
 }
